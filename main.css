@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: dimgray;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
+nav,
+footer {
+  margin: 0;
+  height: 135px;
+  border: 1px solid salmon
+}
+
+section {
+  padding-top: 30px;
+  height: 700px;
+
+}
+
+#calcContainer {
+  width: 460px;
+  height: 650px;
+  border: 1px solid salmon;
+
+}
+
+#calcScreen {
+  margin-top: 20px;
+  border: 1px solid salmon;
+  height: 175px;
+}
+
+#calcOldResult {
+  padding-right: 10px;
+  text-align: right;
+  margin: 0;
+  border: 1px solid salmon;
+  height: 50px;
+}
+
+#calcResult {
+  padding-right: 10px;
+  text-align: right;
+  border: 1px solid salmon;
+  height: 125px;
+  font-size: 2em;
+}
+
+#calcButtonContainer {
+  position: relative;
+  border: 1px solid salmon;
+  height: 380px;
+
+}
+
+.numbers {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  margin: 1px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+
+
+}
+
+#calcNumbers {
+  position: absolute;
+  bottom: 10px;
+  width: 230px;
+  margin: 10px;
+
+}
+
+#numberZero {
+  display: inline-block;
+  width: 146.5px;
+  height: 70px;
+
+}
+
+#calcRight {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  width: 160px;
+  margin: 10px;
+  display: inline-flex;
+
+}
+
+#eq {
+  height: 142px;
+  padding-top: 60px;
+}
+
+#buttonLeft {
+
+  width: 80px;
+
+}
+
+#buttonRight {
+
+  width: 80px;
+}
