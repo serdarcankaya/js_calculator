@@ -50,6 +50,7 @@ operatorPad.forEach(operator => {
     updateEquation(userInput);
     updateEquation(operatorText);
     saveEquation();
+    showEquation();
     userInput = "";
   });
 });
