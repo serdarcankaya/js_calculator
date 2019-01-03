@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: dimgray;
+  background-color: darkslategray;
   color: aliceblue;
   box-sizing: border-box;
 }
@@ -10,62 +10,65 @@ nav,
 footer {
   margin: 0;
   height: 135px;
-  border: 1px solid salmon
+  border: 1px solid salmon;
 }
 
 section {
   padding-top: 30px;
   height: 700px;
-
 }
 
 #calcContainer {
   width: 460px;
   height: 650px;
-  border: 1px solid salmon;
-
+  background-color: dimgray;
+  border-radius: 10px;
 }
 
 #calcScreen {
   margin-top: 20px;
-  border: 1px solid salmon;
+  border: 1px solid black;
   height: 175px;
+  border-radius: 10px;
 }
 
 #calcOldResult {
+  color: black;
   padding-right: 10px;
   text-align: right;
   margin: 0;
-  border: 1px solid salmon;
   height: 50px;
+  background-color: grey;
+
 }
 
 #calcResult {
+  color: black;
   padding-right: 10px;
   text-align: right;
-  border: 1px solid salmon;
   height: 125px;
   font-size: 2em;
+  background-color: aliceblue;
 }
 
 #calcButtonContainer {
   position: relative;
-  border: 1px solid salmon;
+  border: 1px solid black;
   height: 380px;
-
 }
 
-.numbers {
+.numbers,
+.operators,
+.results {
   display: inline-block;
   width: 70px;
   height: 70px;
-  border: 1px solid black;
+  border: 1px solid aliceblue;
   margin: 1px;
   text-align: center;
   padding-top: 20px;
   font-size: 20px;
-
-
+  border-radius: 20px;
 }
 
 #calcNumbers {
@@ -73,14 +76,12 @@ section {
   bottom: 10px;
   width: 230px;
   margin: 10px;
-
 }
 
 #numberZero {
   display: inline-block;
   width: 146.5px;
   height: 70px;
-
 }
 
 #calcRight {
@@ -90,21 +91,38 @@ section {
   width: 160px;
   margin: 10px;
   display: inline-flex;
-
 }
 
 #eq {
   height: 142px;
   padding-top: 60px;
+  background-color: orange;
 }
 
 #buttonLeft {
-
   width: 80px;
 
 }
 
 #buttonRight {
-
   width: 80px;
+
+}
+
+.numbers:hover,
+.operators:hover,
+.results:hover {
+  cursor: pointer;
+}
+
+.operators {
+  background-color: crimson;
+}
+
+.results {
+  background-color: skyblue;
+}
+
+.numbers {
+  background-color: rgb(78, 99, 107);
 }

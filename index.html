@@ -16,44 +16,47 @@
 
 <body>
   <nav>
-    This is Header
+    <h1>JavaScript Calculator</h1>
+    <h4>by <a href="https://github.com/serdarcankaya">Serdar Cankaya</a></h4>
+    <h5>for <a href="https://www.theodinproject.com/home">The Odin Project</a>
+    </h5>
   </nav>
   <section>
     <div id="calcContainer" class="container">
 
       <div id="calcScreen">
         <div id="calcOldResult">
-          Old Result
+          <span id="displayOldResult">0</span>
         </div>
         <div id="calcResult">
-          Result
+          <span id="displayResult">0</span>
         </div>
       </div>
       <div id="calcButtonContainer">
         <div id="calcNumbers">
-          <div class="numbers">7</div>
-          <div class="numbers">8</div>
-          <div class="numbers">9</div>
-          <div class="numbers">4</div>
-          <div class="numbers">5</div>
-          <div class="numbers">6</div>
-          <div class="numbers">1</div>
-          <div class="numbers">2</div>
-          <div class="numbers">3</div>
-          <div id="numberZero" class="numbers">0</div>
-          <div class="numbers">.</div>
+          <div data-value="7" class="numbers">7</div>
+          <div data-value="8" class="numbers">8</div>
+          <div data-value="9" class="numbers">9</div>
+          <div data-value="4" class="numbers">4</div>
+          <div data-value="5" class="numbers">5</div>
+          <div data-value="6" class="numbers">6</div>
+          <div data-value="1" class="numbers">1</div>
+          <div data-value="2" class="numbers">2</div>
+          <div data-value="3" class="numbers">3</div>
+          <div data-value="0" id="numberZero" class="numbers">0</div>
+          <div id="point" data-value="." class="numbers">.</div>
         </div>
         <div id="calcRight">
           <div id="buttonLeft">
-            <div class="numbers" style="font-weight:bold;">C</div>
-            <div class="numbers"><i class="fas fa-backspace"></i></div>
-            <div id="eq" class="numbers"><i class="fas fa-equals"></i></div>
+            <div data-value="clear" class="results" style="font-weight:bold;">C</div>
+            <div data-value="delete" class="results"><i class="fas fa-backspace"></i></div>
+            <div data-value="equals" id="eq" class="results"><i class="fas fa-equals"></i></div>
           </div>
           <div id="buttonRight">
-            <div class="numbers"><i class="fas fa-divide"></i></div>
-            <div class="numbers"><i class="fas fa-times"></i></div>
-            <div class="numbers"><i class="fas fa-minus"></i></div>
-            <div class="numbers"><i class="fas fa-plus"></i></div>
+            <div data-value="divide" class="operators"><i class="fas fa-divide"></i></div>
+            <div data-value="multiply" class="operators"><i class="fas fa-times"></i></div>
+            <div data-value="substract" class="operators"><i class="fas fa-minus"></i></div>
+            <div data-value="add" class="operators"><i class="fas fa-plus"></i></div>
           </div>
 
 
